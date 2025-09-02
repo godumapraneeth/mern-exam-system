@@ -1,24 +1,95 @@
-# MERN Exam System
+# 📝 MERN Exam System (Student Module)
 
-A full-stack **Exam Management System** built with the **MERN stack** (MongoDB, Express.js, React, Node.js).  
-This project allows users to register, log in, take exams, and view results with scoring and answer review.
+This is a **full-stack exam-taking application** built as part of the **LeadMasters AI Tech Solutions – Fresher Selection Assessment**.  
+It allows students to register, log in, take an exam with MCQs, navigate between questions, track time, and view results.
 
 ---
 
 ## 🚀 Features
-- User Authentication (Register/Login with JWT)
-- Start Exam with Randomized Questions
-- Submit Exam and Get Score
-- Answer Review (Correct vs Selected Options)
-- Fully Responsive Frontend (React + Tailwind CSS)
-- Secure API with Protected Routes
-- Environment variable support (`.env` files)
+- 🔑 **User Authentication** – Register & Login with JWT  
+- 🎯 **Start Exam** – Fetch randomized questions from backend  
+- 📑 **Exam Interface** – Display MCQs with Next/Previous navigation  
+- ⏳ **Timer** – 30-minute countdown with auto-submit  
+- 📤 **Submit Exam** – Score calculation on backend  
+- 📊 **Result Page** – Shows score, answers, and correct answers  
 
 ---
 
 ## 🛠️ Tech Stack
-**Frontend:** React, Vite, Tailwind CSS, Axios, React Router  
-**Backend:** Node.js, Express.js, MongoDB, JWT Authentication  
-**Database:** MongoDB Atlas (or local MongoDB)  
+- **Frontend:** React.js, TailwindCSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB (Atlas)  
+- **Authentication:** JWT (JSON Web Tokens)  
 
 ---
+
+## 📂 Project Structure
+mern-exam-system/
+│── backend/ # Express.js APIs
+│ ├── routes/ # Auth & Exam routes
+│ ├── models/ # MongoDB schemas
+│ ├── controllers/# Business logic
+│ └── server.js # Entry point
+│
+│── frontend/ # React.js (Vite)
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── context/
+│ │ └── App.jsx
+│ └── vite.config.js
+│
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/mern-exam-system.git
+cd mern-exam-system
+2️⃣ Backend Setup
+bash
+Copy code
+cd backend
+npm install
+Create a .env file in backend/ with:
+
+ini
+Copy code
+PORT=5000
+MONGO_URI=your-mongodb-uri
+JWT_SECRET=your-secret-key
+Start server:
+
+bash
+Copy code
+npm run dev
+3️⃣ Frontend Setup
+bash
+Copy code
+cd frontend
+npm install
+npm run dev
+The app runs on:
+
+Frontend: http://localhost:5173
+
+Backend: http://localhost:5000
+
+📬 API Testing (Postman)
+A Postman Collection is included in /postman/ExamSystem.postman_collection.json
+
+Import it into Postman to test APIs:
+
+/api/auth/register → Register user
+
+/api/auth/login → Login & get JWT
+
+/api/exam/start → Fetch questions
+
+/api/exam/submit → Submit answers & get score
