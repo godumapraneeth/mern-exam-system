@@ -57,9 +57,6 @@ Frontend: http://localhost:5173
 
 Backend: http://localhost:5000
 
-📬 API Testing (Postman)
-A Postman Collection is included in /postman/ExamSystem.postman_collection.json
-
 Import it into Postman to test APIs:
 
 /api/auth/register → Register user
