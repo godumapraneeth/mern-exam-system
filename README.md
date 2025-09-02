@@ -19,32 +19,8 @@ It allows students to register, log in, take an exam with MCQs, navigate between
 - **Frontend:** React.js, TailwindCSS  
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB (Atlas)  
-- **Authentication:** JWT (JSON Web Tokens)  
-
----
-
-## 📂 Project Structure
-mern-exam-system/
-│── backend/ # Express.js APIs
-│ ├── routes/ # Auth & Exam routes
-│ ├── models/ # MongoDB schemas
-│ ├── controllers/# Business logic
-│ └── server.js # Entry point
-│
-│── frontend/ # React.js (Vite)
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── context/
-│ │ └── App.jsx
-│ └── vite.config.js
-│
-└── README.md
-
-yaml
-Copy code
-
----
+- **Authentication:** JWT (JSON Web Tokens)
+- 
 
 ## ⚙️ Installation & Setup
 
